@@ -1,8 +1,6 @@
 using BlogChallenge.API.DTOs;
 using BlogChallenge.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using System.Net;
-using System.Reflection.Metadata;
 
 namespace BlogChallenge.API.Controllers
 {

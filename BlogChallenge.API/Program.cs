@@ -5,7 +5,6 @@ using BlogChallenge.DAL.Repositories;
 using BlogChallenge.Service.Interfaces;
 using BlogChallenge.Service.Services;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.SqlServer;
 
 var builder = WebApplication.CreateBuilder(args);
 

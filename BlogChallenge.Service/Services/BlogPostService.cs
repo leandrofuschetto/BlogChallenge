@@ -2,7 +2,6 @@
 using BlogChallenge.Domain.Exceptions;
 using BlogChallenge.Domain.Models;
 using BlogChallenge.Service.Interfaces;
-using Microsoft.IdentityModel.Tokens;
 
 namespace BlogChallenge.Service.Services
 {

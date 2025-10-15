@@ -1,5 +1,4 @@
 ﻿using BlogChallenge.DAL.Entities;
-using BlogChallenge.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace BlogChallenge.DAL

@@ -4,9 +4,6 @@ using BlogChallenge.Domain.Exceptions;
 using BlogChallenge.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using System.Data;
-using System.Data.Common;
-using System.Reflection.Metadata;
 
 namespace BlogChallenge.DAL.Repositories
 {
