@@ -47,7 +47,7 @@ BlogPosts
 
 1. API and Contracts
 	* Pagination and sorting on GET /api/posts: add page, pageSize, sortBy
-	* Add publicationDate
+	* Add publicationDate in BlogPOst and comments
 	* Filtering: by date range, title keyword, minimum comments
 
 2. Data Model
