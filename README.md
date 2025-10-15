@@ -46,18 +46,21 @@ BlogPosts
 ## Next Steps - Suggestions
 
 1. API and Contracts
-* Pagination and sorting on GET /api/posts: add page, pageSize, sortBy
-* Add publicationDate
-* Filtering: by date range, title keyword, minimum comments
+	* Pagination and sorting on GET /api/posts: add page, pageSize, sortBy
+	* Add publicationDate
+	* Filtering: by date range, title keyword, minimum comments
+
 2. Data Model
-* Timestamps: add CreatedAt and UpdatedAt to BlogPost and Comment (set by EF/DB).
-* Soft delete: IsDeleted with EF global query filters if logical deletes are needed.
+	* Timestamps: add CreatedAt and UpdatedAt to BlogPost and Comment (set by EF/DB).
+	* Soft delete: IsDeleted with EF global query filters if logical deletes are needed.
+
 3. Authentication
-* Users: add User/Author entities
-* Authentication: JWT Bearer; protect write endpoints.
-* Authorization: roles/policies (Author can create, Admin can moderate/delete).
+	* Users: add User/Author entities
+	* Authentication: JWT Bearer; protect write endpoints.
+	* Authorization: roles/policies (Author can create, Admin can moderate/delete).
+
 4. Testing
-* Add Integration Tests to cover DB transactions are well performed
+	* Add Integration Tests to cover DB's transactions are well performed
 	
 	
 
