@@ -1,10 +1,7 @@
 ﻿using BlogChallenge.DAL.Interfaces;
-using BlogChallenge.Domain.Exceptions;
 using BlogChallenge.Domain.Models;
 using BlogChallenge.Service.Services;
-using Microsoft.Extensions.Logging;
 using Moq;
-using System;
 using Xunit;
 
 namespace BlogChallenge.Service.Tests
