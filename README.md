@@ -60,6 +60,7 @@ BlogPosts
 	* Authorization: roles/policies (Author can create, Admin can moderate/delete).
 
 4. Testing
+    * Add unit test and achieve 100% coverage of business layer
 	* Add Integration Tests to cover DB's transactions are well performed
 	
 	
