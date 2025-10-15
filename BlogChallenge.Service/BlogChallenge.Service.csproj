@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogChallenge.DAL\BlogChallenge.DAL.csproj" />
+    <ProjectReference Include="..\BlogChallenge.Domain\BlogChallenge.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
