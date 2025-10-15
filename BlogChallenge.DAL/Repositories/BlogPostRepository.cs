@@ -38,7 +38,7 @@ namespace BlogChallenge.DAL.Repositories
             }
             catch (DbUpdateException ex)
             {
-                _logger.LogError($"An error ocurrs when creating new blogPost. At {CLASS_NAME}, AddBlogPost");
+                _logger.LogError(ex, "An error occurs when creating a new blog post. At {ClassName}, AddBlogPost", CLASS_NAME);
 
                 throw new DataBaseContextException(
                     ex.Message,
@@ -64,13 +64,13 @@ namespace BlogChallenge.DAL.Repositories
             }
             catch (InvalidOperationException ex)
             {
-                _logger.LogError($"Invalid Operation Exception ocurrs when getting all posts. At {CLASS_NAME}, GetAllPosts");
+                _logger.LogError(ex, "InvalidOperationException occurs when getting all posts. At {ClassName}, GetAllPosts", CLASS_NAME);
 
                 throw new DataBaseContextException(ex.Message, ex);
             }
             catch (TimeoutException ex)
             {
-                _logger.LogError($"Timeout ocurrs when getting all posts. At {CLASS_NAME}, GetAllPosts");
+                _logger.LogError(ex, "Timeout occurs when getting all posts. At {ClassName}, GetAllPosts", CLASS_NAME);
 
                 throw new DataBaseContextException(ex.Message, ex);
             }
@@ -88,7 +88,7 @@ namespace BlogChallenge.DAL.Repositories
             }
             catch (InvalidOperationException ex)
             {
-                _logger.LogError($"An error ocurrs when getting posts by Id. At {CLASS_NAME}, GetPostById, Id: {id}");
+                _logger.LogError(ex, "An error occurs when getting posts by Id. At {ClassName}, GetPostById, Id: {Id}", CLASS_NAME, id);
 
                 throw new DataBaseContextException(
                     ex.Message,
@@ -109,7 +109,7 @@ namespace BlogChallenge.DAL.Repositories
             }
             catch (DbUpdateException ex)
             {
-                _logger.LogError($"An error ocurrs when adding a commnent to a post. At {CLASS_NAME}, UpdatePostWithComments, Id: {blogPost.Id}");
+                _logger.LogError(ex, "An error occurs when adding a comment to a post. At {ClassName}, UpdatePostWithComments, Id: {Id}", CLASS_NAME, blogPost.Id);
 
                 throw new DataBaseContextException(
                     ex.Message,

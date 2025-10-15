@@ -18,14 +18,14 @@ namespace BlogChallenge.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<GetPostResponse>>> GetAllPosts()
+        public async Task<ActionResult<IEnumerable<GetPostListItemResponse>>> GetAllPosts()
         {
             var blogPosts = await _blogPostService.GetAllPosts();    
 
-            var listPosts = new List<GetPostResponse>();
+            var listPosts = new List<GetPostListItemResponse>();
             foreach (var post in blogPosts)
             {
-                listPosts.Add(GetPostResponse.FromDomain(post));
+                listPosts.Add(GetPostListItemResponse.FromDomain(post));
             }
 
             return Ok(listPosts);
