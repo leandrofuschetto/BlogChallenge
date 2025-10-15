@@ -30,7 +30,7 @@ For Database, in the first start of the application, the DB is created and some 
 
 ## Endpoints
 
-1. BlogPosts
+BlogPosts
   * GET /api/posts: This endpoint should return a list of all blog posts, including their titles and the number of comments associated with each post.
   * POST /api/posts: Create a new blog post.
   * GET /api/posts/{id}: Retrieve a specific blog post by its ID, including its title, content, and a list of associated comments.
